@@ -1,0 +1,22 @@
+.DS_Store
+
+# dependencies
+/node_modules
+
+# build files
+/dist
+
+# logs and databases
+*.log
+/data
+/db
+/logs
+/*.log
+/*.pid
+
+# dotenv environment variables
+.env
+
+# IDE files
+.idea
+.vscode

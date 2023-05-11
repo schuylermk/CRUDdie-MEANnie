@@ -31,7 +31,7 @@ db.mongoose
 
 // simple route
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to this SMK crud application." });
+  res.json({ message: "Welcome to this smfk crud application." });
 });
 
 require("./app/routes/tutorial.routes")(app);
@@ -39,5 +39,5 @@ require("./app/routes/tutorial.routes")(app);
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}.`);
+  console.log(`Serverrr is running on port ${PORT}.`);
 });
