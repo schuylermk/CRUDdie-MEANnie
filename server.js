@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 
+const path = __dirname + '/app/views/';
 const app = express();
 
 var corsOptions = {
@@ -29,9 +30,8 @@ db.mongoose
     process.exit();
   });
 
-// simple route
-app.get("/", (req, res) => {
-  res.json({ message: "Welcome to this smfk crud application." });
+app.get('/', function (req,res) {
+  res.sendFile(path + "index.html");
 });
 
 require("./app/routes/tutorial.routes")(app);
